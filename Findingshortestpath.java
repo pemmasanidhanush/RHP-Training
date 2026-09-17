@@ -26,12 +26,6 @@ class Main{
         PriorityQueue<int[]> pq = new PriorityQueue<>
         ((x,y) ->{return x[1] - y[1];}); 
         pq.add(new int[]{start,0});
-        // for(int k : g.keySet()){
-        //     for(int[] x : g.get(k)){
-        //          System.out.println(k + " " + x[0] + " "+ x[1]);
-
-        //     }
-        // }
         while(!pq.isEmpty()){
             int[] curr = pq.poll();
             int currCity = curr[0],currDist = curr[1];
